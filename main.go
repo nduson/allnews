@@ -263,6 +263,7 @@ func main() {
 	http.HandleFunc("/", index)
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 
-	http.ListenAndServe(":6060", nil)
+	//http.ListenAndServe(":6060", nil)
+	http.ListenAndServe(":8080", nil)
 
 }
